@@ -1,0 +1,8 @@
+version: '3'
+services:
+  redis-server:
+    image: 'redis' #image form docker hub
+  node-app:
+    build: .      #create from local directory
+    ports:
+      - "4001:8081"
